@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Game.com</title>
+    <style>
+        *
+        {
+            margin: 0;
+            background-color: rgb(218, 249, 41);
+        }
+        .main
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             font-size: larger;
+             font-weight: bolder;
+             margin: 10px;
+             text-shadow: 3px 3px 2px rgb(51, 48, 219);
+        }
+       .Btn 
+       {
+        font-size:40px;
+        text-align: center;
+       }
+    button
+    {
+        padding: 20px;
+        font-size: 20px;
+        border-color: rgb(255, 255, 255);
+        box-shadow: 7px 7px 7px black;
+        background-color: black;
+        /* color: aliceblue; */
+    }
+    button:hover
+    {
+     background-color: rgb(0, 0, 0);
+     color: aliceblue;
+     border: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="main"><h1 id="h">Letter Game</h1></div>
+    
+    <div class="Btn">
+     <button onclick="Alpha(a=['Apple','Ambulance','Airplane','Ant'])">A</button>
+     <button onclick="Alpha(b=['Bus','ButterFly','Ball','Bed'])">B</button>
+     <button onclick="Alpha(c=['Cage','Calculator','Cake','Calender'])">C</button>
+     <button onclick="Alpha(d=['Dog','Dusk','Dor','Date'])">D</button>
+     <button onclick="Alpha(e=['Elephant','Ear','Each','Else'])">E</button>
+     <button onclick="Alpha(f=['Fish','Fig','Fuel','Flag'])">F</button>
+     <button onclick="Alpha(g=['Grapes','Game','Gold','Gum'])">G</button>
+     <button onclick="Alpha(h=['House','Hat','Harp','Hip'])">H</button>
+     <br><br>
+     <button onclick="Alpha(i=['Ink','Ice','Image','Iron'])">I</button>
+     <button onclick="Alpha(j=['Jacket','Jail','Jam','Journey'])">J</button>
+     <button onclick="Alpha(k=['Kite','Kids','Kettle','King'])">K</button>
+     <button onclick="Alpha(l=['Lamp','Leamon','Lion','Leaf'])">L</button>
+     <button onclick="Alpha(m=['Mango','Machine','Magic','Mail'])">M</button>
+     <button onclick="Alpha(n=['Night','Net','Nose','Navy'])">N</button>
+     <br><br>
+     <button onclick="Alpha(o=['Object','Objective','Obtain','Observe'])">O</button>
+     <button onclick="Alpha(p=['Play','Prove','Patient','Pat'])">P</button>
+     <button onclick="Alpha(q=['Queen','Quiet','Quick','Quarter'])">Q</button>
+     <button onclick="Alpha(r=['Radio','Run','Road','Rush'])">R</button>
+     <button onclick="Alpha(s=['Sun','Snak`e','Sheep','Soap'])">S</button>
+     <br><br>
+     <button onclick="Alpha(t=['Triangle','Thing','Tree','Train'])">T</button>
+     <button onclick="Alpha(u=['Umbrella','Unable','Umpire','Ugly'])">U</button>
+     <button onclick="Alpha(v=['Van','Vowels','Vase','Violin'])">V</button>
+     <button onclick="Alpha(w=['Window','Wish','WonderFul','Warm'])">W</button>
+     <br><br>
+     <button onclick="Alpha(x=['Xeron','Xylophone','X-Max','X-Ray'])">X</button>
+     <button onclick="Alpha(y=['Year','Youga','Young','You'])">Y</button>
+     <button onclick="Alpha(z=['Zoo','Zip','Zebra','Zig Zag'])">Z</button>
+    </div>
+    <script>
+     let show = document.getElementById("h")
+     function Alpha (a_word, b_word, c_word, d_word, e_word, f_word, g_word, h_word, i_word, j_word, k_word, l_word, m_word, n_word, o_word, p_word, q_word, r_word, s_word, t_word, u_word, v_word, w_word, x_word, y_word, z_word){
+     let random = Math.floor(Math.random()*4)
+     show.innerText = a_word[random];
+     show.innerText = b_word[random];
+     show.innerText = c_word[random];
+     show.innerText = d_word[random];
+     show.innerText = e_word[random];
+     show.innerText = f_word[random];
+     show.innerText = g_word[random];
+     show.innerText = h_word[random];
+     show.innerText = i_word[random];
+     show.innerText = j_word[random];
+     show.innerText = k_word[random];
+     show.innerText = l_word[random];
+     show.innerText = m_word[random];
+     show.innerText = n_word[random];
+     show.innerText = o_word[random];
+     show.innerText = p_word[random];
+     show.innerText = q_word[random];
+     show.innerText = r_word[random];
+     show.innerText = s_word[random];
+     show.innerText = t_word[random];
+     show.innerText = u_word[random];
+     show.innerText = v_word[random];
+     show.innerText = w_word[random];
+     show.innerText = x_word[random];
+     show.innerText = y_word[random];
+     show.innerText = z_word[random];
+     }
+    </script>
+</body>
+</html>
